@@ -63,7 +63,7 @@ function Services() {
         <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
       </div>
 
-      <div className="grid grid-cols-2 sm:gap-6 md:gap-8 lg:gap-14 mb-8 lg:mb-16 sm:grid-cols-3 items-center sm:px-4 md:px-8 lg:px-12">
+      <div className="grid grid-cols-2 sm:gap-6 md:gap-8 lg:gap-20 mb-8 lg:mb-16 sm:grid-cols-3 items-center sm:px-4 md:px-8 lg:px-12">
         {servicesContent.map((content) =>
           content.image ? (
             <Image
@@ -77,9 +77,9 @@ function Services() {
           ) : (
             <div
               key={content.id}
-              className="flex flex-col text-white max-w-md items-center space-y-4"
+              className="flex flex-col text-white max-w-md items-center space-y-4 "
             >
-              <h1 className="text-4xl text-center font-semibold">
+              <h1 className="text-4xl font-serif text-center font-semibold">
                 {content.title}
               </h1>
               <p className="text-center text-lg">{content.desc}</p>
